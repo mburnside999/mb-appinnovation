@@ -1,5 +1,6 @@
 //mikes app innovation project
 var express = require('express');
+require('newrelic');
 var pg = require('pg');
 
 var app = express();
