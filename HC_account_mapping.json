@@ -1,0 +1,52 @@
+{
+  "mappings": [
+    {
+      "object_name": "Account",
+      "config": {
+        "indexes": {
+          "SystemModstamp": {
+            "unique": false
+          },
+          "Customer_Account__c": {
+            "unique": true
+          },
+          "Id": {
+            "unique": true
+          }
+        },
+        "sf_max_daily_api_calls": 30000,
+        "access": "read_write",
+        "upsert_field": "Customer_Account__c",
+        "applied_at": "2019-09-18T00:17:15.108604Z",
+        "sf_polling_seconds": 600,
+        "sf_notify_enabled": true,
+        "fields": {
+          "Name": {},
+          "IsDeleted": {},
+          "SystemModstamp": {},
+          "CreatedDate": {},
+          "AccountNumber": {},
+          "Customer_Account__c": {},
+          "Type": {},
+          "Id": {},
+          "Industry": {}
+        }
+      }
+    }
+  ],
+  "connection": {
+    "app_name": "mb-appinnovation-staging",
+    "organization_id": "00D1I000001f6MkUAI",
+    "exported_at": "2019-09-24T07:45:37.175474+00:00",
+    "features": {
+      "disable_bulk_writes": false,
+      "poll_db_no_merge": true,
+      "poll_external_ids": false,
+      "rest_count_only": false
+    },
+    "api_version": "46.0",
+    "name": "",
+    "logplex_log_enabled": false
+  },
+  "version": 1
+}

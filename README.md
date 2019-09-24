@@ -125,7 +125,14 @@ Note: This demo version of Heroku Connect keeps 10k rows in sync between salesfo
 heroku addons:create herokuconnect:demo
 ```
 Click on Heroku Connect in the dashboard and provision the connection to a Salesforce Developer Edition Org.
-- Map a few objects and corresponding fields 
+
+- Under Settings import the Heroku Connect mapping file:
+
+```
+HC_account_mapping.json
+
+```
+
 - Enable the streaming API for Sync from Salesforce to Heroku Postgres
 
 ## Bonus
