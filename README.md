@@ -129,8 +129,19 @@ Click on Heroku Connect in the dashboard and provision the connection to a Sales
 - Enable the streaming API for Sync from Salesforce to Heroku Postgres
 
 ## Bonus
-Once the data is synced to database, modify the database code in the previous step to output the results from Salesforce
-Create a new route in index.js, name it salesforce
+Once the data is synced to database, edit index.js to create a new route called sfdb, adding the following code.
+
+app.get('/sfdb', function (request, response) {
+  pg.connect(process.env.DATABASE_URL, function(err, client, done) { 
+    client.query('SELECT id,name,type,accountnumber,industry FROM salesforce.account order by id desc', function(err, result) {
+      done();
+      if (err)
+       { console.error(err); response.send("Error " + err); }
+      else
+       { response.render('pages/sfdb', {results: result.rows} ); }
+    });
+  });
+});
 
 # 5 - Monitoring: Exercise
 ## Offense
