@@ -153,6 +153,8 @@ app.get('/sfdb', function (request, response) {
 
 ```
 
+Open your Salesforce org - create an account - refresh your Heroku app page - in Salesforce modify type, industry - Heroku refresh app page 
+
 # 5 - Monitoring: Exercise
 ## Offense
 You are a hacker. You live in eastern hackistan. You have a contract with EvilCorp to take down a site that competes with them. Your mission is to take down WellCo!
