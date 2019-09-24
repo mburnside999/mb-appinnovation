@@ -131,6 +131,7 @@ Click on Heroku Connect in the dashboard and provision the connection to a Sales
 ## Bonus
 Once the data is synced to database, edit index.js to create a new route called sfdb, adding the following code.
 
+```
 app.get('/sfdb', function (request, response) {
   pg.connect(process.env.DATABASE_URL, function(err, client, done) { 
     client.query('SELECT id,name,type,accountnumber,industry FROM salesforce.account order by id desc', function(err, result) {
@@ -142,6 +143,8 @@ app.get('/sfdb', function (request, response) {
     });
   });
 });
+
+```
 
 # 5 - Monitoring: Exercise
 ## Offense
