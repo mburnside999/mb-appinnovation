@@ -246,3 +246,4 @@ Don't forget to scale down at the end of the day!
 - The tests should pass and it should auto-deploy
 
 And that's a real-life review-app -> CI -> CD scenario!
+# mb-appinnovation
