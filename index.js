@@ -1,6 +1,8 @@
 //comment added to features
 // chenged  on features branch
 // and again
+
+>>>>>>> ca2494555f159509bd5596aa8d62d40787f3b9a6
 require('newrelic');
 var express = require('express');
 var pg = require('pg');
@@ -21,7 +23,7 @@ app.get('/', function(request, response) {
 //////
 app.get('/messages', function (req, res, next) {
   setTimeout(() => {
-    res.json({hello: "World"})
+    res.json({hello: "Jasper World"})
   }, 500);
 });
 
