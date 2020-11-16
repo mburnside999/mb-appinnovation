@@ -25,7 +25,7 @@ app.get('/messages', function (req, res, next) {
 app.get('/clocks', function (req, res, next) {
   const start = new Date().getTime();
   while (new Date().getTime() < start + 100);
-  res.json({hello: "Hello World"})
+  res.json({hello: "World"})
 });
 
 app.get('/atan2/:count', (req, res, next) => {
