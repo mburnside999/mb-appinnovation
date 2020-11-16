@@ -3,7 +3,6 @@
 // and again
 //and again
 
->>>>>>> ca2494555f159509bd5596aa8d62d40787f3b9a6
 require('newrelic');
 var express = require('express');
 var pg = require('pg');
