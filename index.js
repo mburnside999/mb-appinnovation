@@ -18,7 +18,7 @@ app.get('/', function(request, response) {
 //////
 app.get('/messages', function (req, res, next) {
   setTimeout(() => {
-    res.json({hello: "World"})
+    res.json({hello: "Mikes World"})
   }, 500);
 });
 
